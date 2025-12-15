@@ -1,0 +1,120 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; background: #fff; color: #111; }
+
+.page{
+  width: min(1100px, 96vw);
+  margin: 24px auto;
+  display: grid;
+  grid-template-columns: 230px 18px 1fr;
+  gap: 0;
+}
+
+.col-left{
+  display: grid;
+  grid-template-rows: 1fr 110px;
+  gap: 0;
+  border: 2px solid #111;
+  border-right: none;
+}
+
+.col-gap{
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
+}
+
+.col-right{
+  display: grid;
+  grid-template-rows: 110px 1fr 110px;
+  border: 2px solid #111;
+  border-left: none;
+}
+
+.row-top, .row-bottom{
+  display: grid;
+}
+
+.row-top{
+  border-bottom: 2px solid #111;
+}
+.row-bottom{
+  border-top: 2px solid #111;
+  grid-template-columns: 1fr 230px;
+}
+
+.block{
+  position: relative;
+  padding: 14px;
+  min-height: 80px;
+}
+
+.label{
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.block-1{ background: #f3dfcf; border-bottom: 2px solid #111; }
+.block-4{ background: #e8f1dd; }
+
+.block-2{ background: #cfe0f4; }
+.block-3{ background: #fff; }
+.block-5{ background: #cfe0f4; border-right: 2px solid #111; }
+.block-6{ background: #cfe0f4; }
+
+.h2{ margin: 8px 0 10px; font-size: 18px; }
+.h3{ margin: 10px 0; font-size: 15px; }
+.small{ font-size: 13px; opacity: 0.85; }
+
+.mini-form{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.mini-form input{ width: 80px; padding: 6px 8px; }
+
+.toolbar{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+button{
+  padding: 8px 10px;
+  border: 1px solid #111;
+  background: #fff;
+  cursor: pointer;
+}
+button.primary{
+  background: #111;
+  color: #fff;
+}
+.status{ font-size: 13px; opacity: 0.85; }
+
+.items{ display: grid; gap: 10px; margin: 10px 0; }
+.item{
+  border: 1px dashed #333;
+  padding: 10px;
+  border-radius: 8px;
+}
+.item-grid{
+  display: grid;
+  grid-template-columns: 1fr 170px 170px;
+  gap: 8px;
+}
+.item label{ display: grid; gap: 6px; font-size: 13px; }
+.item input{ padding: 7px 8px; width: 100%; }
+.item-actions{ display: flex; gap: 8px; justify-content: flex-end; margin-top: 8px; }
+
+.preview, .render{
+  display: grid;
+  gap: 14px;
+  padding: 8px;
+}
+
+.sep{ border: none; border-top: 1px solid #ddd; margin: 14px 0; }
+.hint{ font-size: 13px; opacity: 0.8; }

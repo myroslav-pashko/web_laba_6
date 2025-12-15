@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CP6 Var15 — Page 1 (Builder)</title>
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/glitch.css" />
+</head>
+<body>
+  <div class="page">
+    <aside class="col-left">
+      <section class="block block-1">
+        <div class="label">1</div>
+        <div id="text1">Текст блоку 1 (змінний)</div>
+      </section>
+      <section class="block block-4">
+        <div class="label">4</div>
+        <div>Блок 4</div>
+      </section>
+    </aside>
+
+    <div class="col-gap"></div>
+
+    <main class="col-right">
+      <section class="row-top">
+        <section class="block block-2">
+          <div class="label">2</div>
+          <div class="mini-form">
+            <label>x:
+              <input id="inputX" type="number" value="8" min="0" max="40">
+            </label>
+            <button id="swapBtn" type="button">Swap 1↔2</button>
+          </div>
+          <div id="text2">Текст блоку 2 (змінний)</div>
+        </section>
+      </section>
+
+      <section class="block block-3">
+        <div class="label">3</div>
+
+        <h2 class="h2">Glitch Text — конструктор</h2>
+
+        <div class="toolbar">
+          <button id="addItemBtn" type="button">+ Додати елемент</button>
+          <button id="saveBtn" type="button" class="primary">💾 Зберегти на сервер</button>
+          <span id="status" class="status"></span>
+        </div>
+
+        <div class="hint">
+          Порада: порядок елементів можна міняти кнопками ↑ ↓. Параметри — текст, відступи, кольори, тривалість анімації.
+        </div>
+
+        <div id="items" class="items"></div>
+
+        <hr class="sep"/>
+
+        <h3 class="h3">Попередній перегляд</h3>
+        <div id="preview" class="preview"></div>
+      </section>
+
+      <section class="row-bottom">
+        <section class="block block-5">
+          <div class="label">5</div>
+          <div>Блок 5</div>
+        </section>
+
+        <section class="block block-6">
+          <div class="label">6</div>
+          <div class="mini-form">
+            <label>y:
+              <input id="inputY" type="number" value="2" min="0" max="40">
+            </label>
+          </div>
+          <div class="small">Параметр y просто демонстраційний .</div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/page1.js"></script>
+</body>
+</html>

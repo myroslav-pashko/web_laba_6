@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CP6 Var15 — Page 2 (Render)</title>
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/glitch.css" />
+</head>
+<body>
+  <div class="page">
+    <aside class="col-left">
+      <section class="block block-1">
+        <div class="label">1</div>
+        <div>Сторінка 2 — читання з сервера</div>
+      </section>
+      <section class="block block-4">
+        <div class="label">4</div>
+        <div>Блок 4</div>
+      </section>
+    </aside>
+
+    <div class="col-gap"></div>
+
+    <main class="col-right">
+      <section class="row-top">
+        <section class="block block-2">
+          <div class="label">2</div>
+          <div class="small">
+            Автооновлення: <span id="pollInfo">—</span>
+          </div>
+        </section>
+      </section>
+
+      <section class="block block-3">
+        <div class="label">3</div>
+        <h2 class="h2">Glitch Text — результат</h2>
+        <div id="render" class="render"></div>
+      </section>
+
+      <section class="row-bottom">
+        <section class="block block-5">
+          <div class="label">5</div>
+          <div>Блок 5</div>
+        </section>
+        <section class="block block-6">
+          <div class="label">6</div>
+          <div class="small">Дані беруться через PHP + fetch (async).</div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/page2.js"></script>
+</body>
+</html>
+    
